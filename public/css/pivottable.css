@@ -1,0 +1,161 @@
+table.pvtUi { color: #333; }
+
+table.pvtUi td, table.pvtUi th {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+table.pvtTable {
+    font-size: 8pt;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.pvtTable thead tr th, table.pvtTable tbody tr th {
+    background-color: #f3f5f7;    
+    font-size: 8pt;
+    padding: 5px;
+    width: 10%;
+}
+
+table.pvtTable .pvtColLabel { text-align: center; }
+
+table.pvtTable .pvtTotalLabel { text-align: center; }
+
+table.pvtTable tbody tr td {
+    color: #3D3D3D;
+    padding: 5px;
+    background-color: #FFF;
+    border: 1px solid #CDCDCD;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pvtTotal, .pvtGrandTotal { font-weight: bold; }
+
+.pvtAttrDropdown { margin-top: 5px; }
+
+.pvtAxisContainer, .pvtVals {
+    min-width: 20px;
+    min-height: 20px;
+    width: 10%;
+}
+
+table.pvtUi>tr:first-child td {
+    background: #2c3e50;
+}
+.pvtAxisContainer li {
+    padding: 8px 3px;
+    list-style-type: none;
+    cursor:move;
+    width: auto;
+}
+.pvtAxisContainer li.pvtPlaceholder {
+    -webkit-border-radius: 5px;
+    padding: 3px 15px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px dashed #aaa;
+}
+
+.pvtAxisContainer li span.pvtAttr {
+    -webkit-text-size-adjust: 100%;
+    background: #2980b9;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 8px;
+    white-space:nowrap;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.pvtTriangle {
+    cursor:pointer;
+    border: 1px solid #fff;
+    margin-left: 8px;
+    padding-right: 6px;
+}
+
+.pvtHorizList li { display: inline-block; }
+
+.pvtVertList { vertical-align: top; width: 10%; }
+
+.pvtFilteredAttribute { font-style: italic }
+
+.pvtFilterBox{
+    z-index: 100;
+    width: 280px;
+    border: 1px solid gray;
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+}
+
+.pvtFilterBox h4{ margin:0; }
+
+.pvtFilterBox p { margin: 1em auto; }
+
+.pvtFilterBox label { font-weight: normal; }
+
+.pvtFilterBox button {
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+select {
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.pvtFilterBox input[type='checkbox'] { margin-right: 5px; }
+
+.pvtFilterBox input[type='text'] { 
+    padding: 6px 12px;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #aaa;
+}
+.pvtCheckContainer {
+    text-align: left;
+    overflow: scroll;
+    width: 100%;
+    max-height: 200px;
+}
+.pvtCheckContainer p { margin: 5px; }
+
+.pvtRendererArea {
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;  
+}

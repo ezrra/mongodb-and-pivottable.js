@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "homepage": "",
+  "description": "",
+  "main": "server.js",
+  "authors": [],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-bootstrap": "^2.1.3",
+    "bootstrap": "^3.3.7",
+    "ng-notify": "^0.8.0",
+    "angular-ui-router": "0.3.1",
+    "pivottable": "^2.3.0",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "angular-daterangepicker": "^0.2.2",
+    "lodash": "^4.16.6",
+    "moment": "*",
+    "twix": "^1.1.2"
+  }
+}
