@@ -6,7 +6,7 @@ callWithJQuery = (pivotModule) ->
     # Plain browser env
     else
         pivotModule jQuery
-        
+
 callWithJQuery ($) ->
     nf = $.pivotUtilities.numberFormat
     tpl = $.pivotUtilities.aggregatorTemplates
@@ -15,7 +15,7 @@ callWithJQuery ($) ->
     frFmtInt = nf(digitsAfterDecimal: 0, thousandsSep: " ", decimalSep: ",")
     frFmtPct = nf(digitsAfterDecimal: 1, scaler: 100, suffix: "%", thousandsSep: " ", decimalSep: ",")
 
-    $.pivotUtilities.locales.fr = 
+    $.pivotUtilities.locales.fr =
         localeStrings:
             renderError: "Une erreur est survenue en dessinant le tableau croisé."
             computeError: "Une erreur est survenue en calculant le tableau croisé."
@@ -27,8 +27,10 @@ callWithJQuery ($) ->
             totals: "Totaux"
             vs: "sur"
             by: "par"
+            apply: "Appliquer"
+            cancel: "Annuler"
 
-        aggregators: 
+        aggregators:
             "Nombre":                             tpl.count(frFmtInt)
             "Nombre de valeurs uniques":          tpl.countUnique(frFmtInt)
             "Liste de valeurs uniques":           tpl.listUnique(", ")
@@ -37,9 +39,11 @@ callWithJQuery ($) ->
             "Moyenne":                            tpl.average(frFmt)
             "Minimum":                            tpl.min(frFmt)
             "Maximum":                            tpl.max(frFmt)
+            "Premier":                            tpl.min(frFmt)
+            "Dernier":                            tpl.max(frFmt)
             "Ratio de sommes":                    tpl.sumOverSum(frFmt)
-            "Borne supérieure 80%":        tpl.sumOverSumBound80(true, frFmt)
-            "Borne inférieure 80%":        tpl.sumOverSumBound80(false, frFmt)
+            "Borne supérieure 80%":               tpl.sumOverSumBound80(true, frFmt)
+            "Borne inférieure 80%":               tpl.sumOverSumBound80(false, frFmt)
             "Somme en proportion du totale":      tpl.fractionOf(tpl.sum(),   "total", frFmtPct)
             "Somme en proportion de la ligne":    tpl.fractionOf(tpl.sum(),   "row",   frFmtPct)
             "Somme en proportion de la colonne":  tpl.fractionOf(tpl.sum(),   "col",   frFmtPct)
