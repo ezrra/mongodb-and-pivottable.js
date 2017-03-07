@@ -12,7 +12,7 @@ $ npm install
 $ npm start
 ```
 
-## Run like dev
+### Run like dev
 ```
 $ npm run dev
 ```

@@ -6,7 +6,6 @@
     "dev": "nodemon --max-old-space-size=20000 server.js"
   },
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.15.1",
     "express": "~4.13.4",
     "mongodb": "^2.2.*"
