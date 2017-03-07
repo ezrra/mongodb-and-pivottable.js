@@ -25,14 +25,15 @@
       </div>
     </div>
   </nav>
-   <div class="container theme-showcase" role="main" ng-controller="MainCtrl">
-    <div>
-      <div ng-show="loader"><h3>Loading ...</h3></div>
-      <hr>
-      <div class="table-responsive">
-        <div id="output"></div>
-      </div>
-    </div>
+  <div class="container theme-showcase" role="main" ng-controller="MainCtrl">
+		<span ng-show="loader"><h3>Loading ...</h3></span>
+	 		<div>
+	 			<a class="btn btn-primary" ng-click="generate()">Generate data</a>
+	 		</div>
+ 		<hr>
+ 		<div class="table-responsive">
+ 			<div id="output"></div>
+ 		</div>
   </div>
 
   <!--- Vendors -->
